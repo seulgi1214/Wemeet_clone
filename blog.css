@@ -21,10 +21,10 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    /* --dark: #343a40; */
     --dark: #202020;
     --black: rgb(12, 12, 12);
     --gainsboro: #dcdcdc;
+    --bgcolor:#e8eaf649;
     --btn_duration: 0.5s;
 }
 
@@ -62,6 +62,7 @@ header > .navi > .nav_list > ul > li> a:hover {
     background-color: var(--white);
     position: relative;
     height: 610px;
+    margin-bottom: 60px;
 }
 
 .blog_img {
@@ -143,4 +144,8 @@ header > .navi > .nav_list > ul > li> a:hover {
 .blog_mini span{
     font-weight: 200;
     display: block;
+}
+
+.blog_col_search , .blog_col_category, .blog_col_post {
+    background-color: var(--bgcolor);
 }
