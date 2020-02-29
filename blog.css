@@ -46,7 +46,7 @@ header > .navi > .nav_list > ul > li> a:hover {
 }
 
 .blog {
-    height: 1500px;
+    /* height: 1500px; */
     background-color: var(--light);
 
 }
@@ -146,6 +146,64 @@ header > .navi > .nav_list > ul > li> a:hover {
     display: block;
 }
 
-.blog_col_search , .blog_col_category, .blog_col_post {
+.blog_col_search , .blog_search , .blog_col_category, .blog_col_post {
     background-color: var(--bgcolor);
 }
+
+.blog_wrap_right {
+    width: 400px;
+}
+
+.blog_keyword {
+    /* position: relative; */
+}
+
+.blog_keyword input{
+    width: 300px;
+    height: 50px;
+    background: url("img/icon/blog_search.png") no-repeat;
+    background-size: 18px;
+    background-position: center right;
+}
+
+.blog_keyword a{
+    /* position: absolute; */
+    /* background: url("img/icon/blog_search.png") no-repeat; */
+    
+}
+
+.blog_keyword input::placeholder {
+    color: var(--secondary);
+}
+
+.blog_col_search {
+    display: inline-block;
+    width: 360px;
+    padding: 30px;
+}
+
+.blog_col_search > .blog_search {
+    border:1px solid var(--blue);
+    text-align: center;
+    display: inline-block;
+    margin-top:20px;
+    width: 300px;
+}
+
+.blog_col_search > .blog_search > a {
+    display: block;
+    color: var(--blue);
+    padding: 12px 30px 12px 30px;
+    height: 48px;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.blog_col_search > .blog_search > a:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    transition-duration: var(--btn_duration);
+
+}
+
+
