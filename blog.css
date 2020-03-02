@@ -50,10 +50,18 @@ header > .navi > .nav_list > ul > li> a:hover {
 }
 
 .blog_wrap {
-    padding: 120px 200px 0 350px;
+    padding: 120px 350px 0 350px;
 }
+
+.blog_wrap::after {
+    content: "";
+    display: block;
+    clear: both;    
+}
+
 .blog_wrap_left {
     width: 700px;
+    float: left;
 }
 
 .blog_col{
@@ -141,6 +149,10 @@ header > .navi > .nav_list > ul > li> a:hover {
 .blog_mini span{
     font-weight: 200;
     display: block;
+}
+
+.blog_wrap_right {
+    float: right;
 }
 
 .blog_col_search , .blog_search , .blog_col_category, .blog_col_post, .tag_cloud, .ins_feed, .newsletter{
@@ -297,10 +309,10 @@ header > .navi > .nav_list > ul > li> a:hover {
     margin-bottom: 30px;
 }
 
-.ins_feed > .feed_list {
+.ins_feed > .fl {
     padding: 0px;
 }
-.ins_feed > .feed_list::after {
+.ins_feed > .fl::after {
     content: "";
     display: block;
     clear: both;
@@ -309,21 +321,57 @@ header > .navi > .nav_list > ul > li> a:hover {
 .ins_feed li {
     float: left;
     height: 90px;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 15px;
 }
 
-/* .ins_feed > .feed_list > li:nth-child(n+4):nth-child(-n+6) {
-    margin-top: 10px;
+.ins_feed > .fl + .fl {
+    margin-top: 15px;
 }
 
-.blog_wrap > .ins_feed > .feed_list > li:nth-child(2), li:nth-child(3), li:nth-child(5),li:nth-child(6){
-    margin-left: 10px;
-}  */
-
-
+.ins_feed > .fl > li:first-child {
+    margin:0;
+}
 
 .ins_feed a {
     width: 90px;
     height: 90px;
     display: inline-block;
+}
+
+.newsletter {
+    padding:30px;
+}
+
+.newsletter input{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid var(--gainsboro);
+}
+
+.newsletter input::placeholder {
+    color: var(--secondary);
+}
+
+.newsletter > .enter_email{
+    border:1px solid var(--blue);
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.newsletter > .enter_email > a {
+    display: block;
+    color: var(--blue);
+    padding: 12px 30px 12px 30px;
+    height: 48px;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.newsletter > .enter_email > a:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    transition-duration: var(--btn_duration);
 }
