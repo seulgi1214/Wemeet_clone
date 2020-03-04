@@ -1,33 +1,7 @@
 @import "index.css";
 @import "schedule.css";
 @import "blog.css";
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #f8172d;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #a3a3a3;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #202020;
-    --black: rgb(12, 12, 12);
-    --gainsboro: #dcdcdc;
-    --bgcolor:#e8eaf649;
-    --btn_duration: 0.5s;
-}
+
 
 .s_blog_wrap {
     padding: 120px 350px 0 350px;
@@ -37,13 +11,15 @@
     width: 700px;
 }
 
+.s_blog_col {
+    margin-bottom: 30px;
+}
+
 .s_blog_img {
     overflow: hidden;
     height: 375px;
 }
-.s_blog_category h2 {
-    border: 1px solid black;
-}
+
 .s_blog_category ul {
     padding: 0;
 }
@@ -70,13 +46,24 @@
     letter-spacing: 1px;
 }
 
+.s_blog_category a:hover{
+    color: var(--blue);
+}
+
 .s_blog_post {
     clear: both;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--bgcolor);
 }
 .s_blog_post p{
     color: var(--secondary);
     font-weight: 300;
     font-size: 0.9rem;
+    margin:0;
+}
+
+.s_blog_post p + p{
+margin-top: 20px;
 }
 
 .s_blog_post .blog_blockquote {
@@ -84,7 +71,24 @@
     background-color: var(--bgcolor);
 }
 
-blockquote {
-    border-left: 2px solid var(--secondary);
+.blog_blockquote {
+    background: var(--bgcolor);
+    padding: 5px;
+    margin: 20px 0;
+    font-weight: 600;
+    color: var(--secondary);
 }
 
+blockquote {
+    border-left: 2px solid var(--secondary);
+    background-color: var(--white);
+    padding: 30px;
+}
+
+.s_blog_like span{
+    background: url("icon/heart.png") no-repeat;
+    border: 1px solid black;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
