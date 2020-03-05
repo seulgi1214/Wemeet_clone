@@ -11,10 +11,6 @@
     width: 700px;
 }
 
-.s_blog_col {
-    margin-bottom: 30px;
-}
-
 .s_blog_img {
     overflow: hidden;
     height: 375px;
@@ -53,13 +49,13 @@
 .s_blog_post {
     clear: both;
     padding: 20px 0;
-    border-bottom: 2px solid var(--bgcolor);
 }
 .s_blog_post p{
     color: var(--secondary);
     font-weight: 300;
     font-size: 0.9rem;
     margin:0;
+    letter-spacing: 1px;
 }
 
 .s_blog_post p + p{
@@ -69,6 +65,7 @@ margin-top: 20px;
 .s_blog_post .blog_blockquote {
     width: 700px;
     background-color: var(--bgcolor);
+    font-weight: 600;
 }
 
 .blog_blockquote {
@@ -85,10 +82,74 @@ blockquote {
     padding: 30px;
 }
 
-.s_blog_like span{
-    background: url("icon/heart.png") no-repeat;
-    border: 1px solid black;
+.s_blog_sns::after , .s_blog_post::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.s_blog_like {
+    float: left;
+}
+
+.s_blog_like em {
+    font-style: normal;
+    color: var(--gray-dark);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.fa-heart {
+    color: var(--secondary);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.fa-heart:hover {
+    color: var(--pink);
+}
+
+.s_blog_icon {
+    float: right;
+}
+
+.s_blog_icon li {
+    float: left;
+}
+
+.s_blog_icon li + li{
+    margin-left: 25px;
+}
+
+.fa-facebook-f , .fa-twitter , .fa-behance {
+    color: var(--secondary);
+}
+.fa-facebook-f:hover , .fa-twitter:hover , .fa-behance:hover {
+    color: var(--blue);
+}
+
+.s_blog_post a:first-child{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.prev {
+    float: left;
+}
+.next {
+    float: right;
+}
+.prev span {
+    background-image: url("img/post/preview.png");
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.next span {
+    background-image: url("img/post/next.png");
+    display: inline-block;
+    width: 60px;
+    height: 60px;
 }
