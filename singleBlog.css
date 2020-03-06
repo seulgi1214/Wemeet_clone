@@ -2,6 +2,9 @@
 @import "schedule.css";
 @import "blog.css";
 
+.s_blog_col {
+    margin-bottom: 30px;
+}
 
 .s_blog_wrap {
     padding: 120px 350px 0 350px;
@@ -48,7 +51,7 @@
 
 .s_blog_post {
     clear: both;
-    padding: 20px 0;
+    padding: 40px 0 0 0;
 }
 .s_blog_post p{
     color: var(--secondary);
@@ -82,7 +85,14 @@ blockquote {
     padding: 30px;
 }
 
-.s_blog_sns::after , .s_blog_post::after{
+.s_blog_col2 {
+    border-top: 1px solid rgba(223, 223, 223, 0.5);
+    border-bottom: 1px solid rgba(223, 223, 223, 0.5);
+    padding: 10px 0 30px 0;
+    margin-bottom: 50px;
+}
+
+.s_blog_sns::after , .s_blog_post::after , .prev::after , .next::after {
     display: block;
     clear: both;
     content: "";
@@ -133,12 +143,18 @@ blockquote {
     width: 60px;
     height: 60px;
 }
-
+.s_blog_post em, strong{
+    display: block;
+    margin-top: 4px;
+}
 .prev {
     float: left;
+    width: 280px;
 }
 .next {
     float: right;
+    width: 280px;
+    text-align: right;
 }
 .prev span {
     background-image: url("img/post/preview.png");
@@ -152,4 +168,19 @@ blockquote {
     display: inline-block;
     width: 60px;
     height: 60px;
+}
+
+.prev_img {
+    float: left;
+    margin-right: 15px;
+}
+.next_img {
+    float: right;
+    margin-left: 15px;
+}
+
+.s_blog_comments > .comment_title{
+    font-size: 1.2rem;
+    color: var(--gray-dark);
+    font-weight: 500;   
 }
