@@ -5,13 +5,17 @@
 .s_blog_col {
     margin-bottom: 30px;
 }
-
+.single_blog {
+    margin-bottom: 95px;
+}
 .s_blog_wrap {
     padding: 120px 350px 0 350px;
+    overflow: hidden;
 }
 
 .s_blog_wrap_left {
     width: 700px;
+    float: left;
 }
 
 .s_blog_img {
@@ -93,7 +97,8 @@ blockquote {
 }
 
 .s_blog_col2::after , .s_blog_sns::after, .s_blog_post::after , .prev::after , .next::after , .row1::after .row2::after 
-, .reply::after {
+, .reply::after 
+{
     display: block;
     clear: both;
     content: "";
@@ -310,4 +315,8 @@ blockquote {
     color: var(--white);
     background-color: var(--blue);
     transition-duration: var(--btn_duration);
+}
+
+.footer {
+    clear: both;
 }
