@@ -1,0 +1,56 @@
+@import "singleBlog.css";
+
+h4{
+    font-size: 1.6rem;
+    color: var(--dark);
+    font-weight: 500;
+    margin-top: 0;
+}
+
+b, i, sub, u {
+    color: var(--orange);
+}
+a {
+    text-decoration: none;
+}
+
+p{
+    color: var(--secondary);
+    letter-spacing: 0.3px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.sample_text , .sample_btn{
+    margin-top: 100px;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sample_btn a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 0.9rem;;
+    font-weight: 600;
+}
+
+.ex-1-1 {
+    background-color: var(--bgcolor);
+    color: var(--gray-dark);
+}
+
+.ex-1-2 {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.ex-1-2:hover {
+    border:1px solid var(--orange);
+    background-color: var(--white);
+    color: var(--orange);
+}
