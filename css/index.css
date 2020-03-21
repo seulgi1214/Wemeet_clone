@@ -45,7 +45,7 @@ a{
     font-weight: bold;
 }
 header{
-    background-image: url("img/banner/banner_1.png");
+    background-image: url("../img/banner/banner_1.png");
     background-position: center center;
     background-repeat: no-repeat;
     height: 1000px;
@@ -161,7 +161,7 @@ header > .head_title > a:hover {
 }
 
 .welcome {
-    background-image: url("img/about/shap1.png");
+    background-image: url("../img/about/shap1.png");
     background-repeat: no-repeat;
     background-position: top right;
     height: 900px;
@@ -375,7 +375,7 @@ header > .head_title > a:hover {
 }
 
 .resister {
-    background-image: url("img/banner/resister.png");
+    background-image: url("../img/banner/resister.png");
     background-repeat: no-repeat;
     height: 600px;
     margin-bottom: 130px;
@@ -465,7 +465,7 @@ header > .head_title > a:hover {
     }
 
 .footer {
-    background-image: url("img/barnd/bg.png");
+    background-image: url("../img/barnd/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     height: 750px;
