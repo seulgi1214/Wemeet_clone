@@ -25,25 +25,6 @@
 
 }
 
-body {
-    padding: 0;
-    margin: 0;
-}
-
-* {
-    font-family: 'Noto Sans KR',Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-    margin:0;
-}
-
-a{
-    text-decoration: none;
-    font-weight: bold;
-}
 header{
     background-image: url("../img/banner/banner_1.png");
     background-position: center center;

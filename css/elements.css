@@ -1,4 +1,33 @@
 
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #f8172d;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #a3a3a3;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --dark: #202020;
+    --gainsboro: #dcdcdc;
+    --btn_duration: 0.5s;
+    --btn: #f9f9ff;
+}
+* {
+    box-sizing: border-box;
+}
+
 h4{
     font-size: 1.6rem;
     color: var(--dark);
@@ -39,18 +68,38 @@ p{
 }
 
 .ex-1-1 {
-    background-color: var(--bgcolor);
+    background-color: var(--btn);
     color: var(--gray-dark);
+    border: 1px solid var(--btn);
 }
 
+.ex-1-1:hover {
+    background-color: var(--white);
+    border: 1px solid var(--gainsboro);
+
+}
 .ex-1-2 {
     background-color: var(--orange);
     color: var(--white);
+    border: 1px solid var(--orange);
 }
 
 .ex-1-2:hover {
     border:1px solid var(--orange);
     background-color: var(--white);
     color: var(--orange);
+    transition-duration: var(--btn_duration);
+}
+
+.ex-1-3 {
+    background-color: var(--info);
+    color: var(--white);
+    border: 1px solid var(--info);
+}
+
+.ex-1-3:hover {
+    border: 1px solid var(--info);
+    background-color: var(--white);
+    color: var(--info);
     transition-duration: var(--btn_duration);
 }
