@@ -103,3 +103,60 @@ p{
     color: var(--info);
     transition-duration: var(--btn_duration);
 }
+
+.ex-1-4{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+
+.ex-1-4:hover {
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+    color: var(--blue);
+    transition-duration: var(--btn_duration);
+}
+
+.ex-1-5{
+    background-color: var(--warning);
+    color: var(--white);
+    border: 1px solid var(--warning);
+}
+
+.ex-1-5:hover {
+    border: 1px solid var(--warning);
+    background-color: var(--white);
+    color: var(--warning);
+    transition-duration: var(--btn_duration);
+}
+
+.ex-1-6{
+    background-color: var(--danger);
+    color: var(--white);
+    border: 1px solid var(--danger);
+}
+
+.ex-1-6:hover {
+    border: 1px solid var(--danger);
+    background-color: var(--white);
+    color: var(--danger);
+    transition-duration: var(--btn_duration);
+}
+
+.ex-1-7{
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    text-decoration: underline;
+}
+
+.ex-1-7:hover {
+    border: 1px solid var(--gainsboro);
+    background-color: var(--white);
+    transition-duration: var(--btn_duration);
+}
+
+.ex-1-8{
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    cursor: not-allowed;
+}
