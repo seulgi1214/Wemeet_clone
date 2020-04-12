@@ -67,13 +67,17 @@ p{
     font-weight: 600;
 }
 
-.ex-1-1 {
+.btn_wrap li + li {
+    margin-top:20px;
+}
+
+.ex-1-1, .ex-2-1:hover {
     background-color: var(--btn);
     color: var(--gray-dark);
     border: 1px solid var(--btn);
 }
 
-.ex-1-1:hover {
+.ex-1-1:hover , .ex-2-1{
     background-color: var(--white);
     border: 1px solid var(--gainsboro);
 
@@ -160,3 +164,4 @@ p{
     border: 1px solid var(--btn);
     cursor: not-allowed;
 }
+
