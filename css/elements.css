@@ -82,84 +82,84 @@ p{
     border: 1px solid var(--gainsboro);
 
 }
-.ex-1-2 {
+.ex-1-2 , .ex-2-2:hover {
     background-color: var(--orange);
     color: var(--white);
     border: 1px solid var(--orange);
 }
 
-.ex-1-2:hover {
+.ex-1-2:hover , .ex-2-2 {
     border:1px solid var(--orange);
     background-color: var(--white);
     color: var(--orange);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-3 {
+.ex-1-3 , .ex-2-3:hover{
     background-color: var(--info);
     color: var(--white);
     border: 1px solid var(--info);
 }
 
-.ex-1-3:hover {
+.ex-1-3:hover , .ex-2-3{
     border: 1px solid var(--info);
     background-color: var(--white);
     color: var(--info);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-4{
+.ex-1-4, .ex-2-4:hover {
     background-color: var(--blue);
     color: var(--white);
     border: 1px solid var(--blue);
 }
 
-.ex-1-4:hover {
+.ex-1-4:hover , .ex-2-4 {
     border: 1px solid var(--blue);
     background-color: var(--white);
     color: var(--blue);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-5{
+.ex-1-5, .ex-2-5:hover {
     background-color: var(--warning);
     color: var(--white);
     border: 1px solid var(--warning);
 }
 
-.ex-1-5:hover {
+.ex-1-5:hover, .ex-2-5 {
     border: 1px solid var(--warning);
     background-color: var(--white);
     color: var(--warning);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-6{
+.ex-1-6, .ex-2-6:hover {
     background-color: var(--danger);
     color: var(--white);
     border: 1px solid var(--danger);
 }
 
-.ex-1-6:hover {
+.ex-1-6:hover, .ex-2-6 {
     border: 1px solid var(--danger);
     background-color: var(--white);
     color: var(--danger);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-7{
+.ex-1-7, .ex-2-7:hover {
     background-color: var(--btn);
     border: 1px solid var(--btn);
     text-decoration: underline;
 }
 
-.ex-1-7:hover {
+.ex-1-7:hover, .ex-2-7 {
     border: 1px solid var(--gainsboro);
     background-color: var(--white);
     transition-duration: var(--btn_duration);
 }
 
-.ex-1-8{
+.ex-1-8, .ex-2-8{
     background-color: var(--btn);
     border: 1px solid var(--btn);
     cursor: not-allowed;
